@@ -1,0 +1,8 @@
+services:
+  sql:
+    image:  mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "1"
+      MSSQL_SA_PASSWORD: "Password@1"
+    ports:
+      - "8002:1433"  # Mapping host port 8002 to container port 1433

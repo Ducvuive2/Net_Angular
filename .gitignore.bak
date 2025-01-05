@@ -1,0 +1,56 @@
+# Build Folders
+/bin/
+/obj/
+
+# Visual Studio
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# User-specific files
+*.rsuser
+*.resharper
+*.Rider*
+
+# Auto-generated files
+*.generated.cs
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Test results
+*.trx
+*.coverage
+*.testsettings
+*.testrunconfig
+TestResults/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Web config
+appsettings.json
+appsettings.Development.json
+
+# Publish output
+wwwroot/
