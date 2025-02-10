@@ -7,6 +7,40 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\Infrastructure.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\Infrastructure.deps.json" />
+    <Content Include="obj\Debug\net8.0\Infrastructure.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0\Infrastructure.sourcelink.json" />
+    <Content Include="obj\Infrastructure.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0\Core.dll" />
+    <None Include="bin\Debug\net8.0\Core.pdb" />
+    <None Include="bin\Debug\net8.0\Infrastructure.dll" />
+    <None Include="bin\Debug\net8.0\Infrastructure.pdb" />
+    <None Include="obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date" />
+    <None Include="obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\Infrastructure.assets.cache" />
+    <None Include="obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0\Infrastructure.dll" />
+    <None Include="obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0\Infrastructure.pdb" />
+    <None Include="obj\Debug\net8.0\refint\Infrastructure.dll" />
+    <None Include="obj\Debug\net8.0\ref\Infrastructure.dll" />
+    <None Include="obj\Infrastructure.csproj.nuget.g.props" />
+    <None Include="obj\Infrastructure.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
   </ItemGroup>
 
