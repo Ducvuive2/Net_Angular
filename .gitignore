@@ -1,7 +1,8 @@
-# Build Folders
-/bin/
-/obj/
+# Build Folders (now works for any folder named bin or obj)
+bin/
+obj/
 
+ 
 # Visual Studio
 .vscode/
 .vs/
@@ -56,4 +57,3 @@ appsettings.Development.json
 wwwroot/
 
 
-/obj/
