@@ -8,10 +8,15 @@ public class SpecificationEvaluator<T> where T : BaseEntity
         if (spec.Criteria != null)
         {
             query = query.Where(spec.Criteria); // x => x.Brand == brand
+            Console.WriteLine("Criteria: " + spec.Criteria);
         }
         if (spec.OrderBy != null)
         {
             query = query.OrderBy(spec.OrderBy);
+        }
+        if (spec.IsPagingEnabled)
+        {
+            query = query.Skip(spec.Skip).Take(spec.Take);
         }
         return query;
     }
@@ -30,6 +35,10 @@ public class SpecificationEvaluator<T> where T : BaseEntity
         if (spec.Select != null)
         {
             selectQuery = query.Select(spec.Select);
+        }
+        if (spec.IsPagingEnabled)
+        {
+            selectQuery = selectQuery?.Skip(spec.Skip).Take(spec.Take);
         }
         return selectQuery ?? query.Cast<TResult>();
     }
