@@ -31,10 +31,19 @@ public class SpecificationEvaluator<T> where T : BaseEntity
         {
             query = query.OrderBy(spec.OrderBy);
         }
+
+        if (spec.OrderByDescending != null)
+        {
+            query = query.OrderByDescending(spec.OrderByDescending);
+        }
         var selectQuery = query as IQueryable<TResult>;
         if (spec.Select != null)
         {
             selectQuery = query.Select(spec.Select);
+        }
+        if (spec.IsDistinct)
+        {
+            selectQuery = selectQuery?.Distinct();
         }
         if (spec.IsPagingEnabled)
         {
