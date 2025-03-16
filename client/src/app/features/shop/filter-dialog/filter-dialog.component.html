@@ -1,11 +1,9 @@
-<div class="pl-3 pr-3">
+<div class="pl-3 pr-3 mb-3">
   <h3 class="text-2xl text-center pt-6 mb-3 font-bold">Filter</h3>
   <mat-divider></mat-divider>
   <div class="flex gap-4">
     <div class="w-1/2">
-      <label for="price" class="text-sm font-semibold text-primary"
-        >Brand</label
-      >
+      <label for="price" class="text-sm font-bold text-primary">Brand</label>
       <mat-selection-list [(ngModel)]="selectedBrands" multiple="true">
         @for (brand of shopService.brands; track $index) {
         <mat-list-option [value]="brand">
@@ -15,9 +13,7 @@
       </mat-selection-list>
     </div>
     <div class="w-1/2">
-      <label for="price" class="text-sm font-semibold text-primary"
-        >Types</label
-      >
+      <label for="price" class="text-sm font-bold text-primary">Types</label>
       <mat-selection-list [(ngModel)]="selectedTypes" multiple="true">
         @for (type of shopService.types; track $index) {
         <mat-list-option [value]="type">
