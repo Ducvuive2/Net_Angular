@@ -1,8 +1,9 @@
+@if (products) {
 <div class="flex flex-col gap-4 mt-3">
   <div class="flex justify-between">
     <mat-paginator
       class="!bg-white"
-      [length]="products?.count"
+      [length]="products.count"
       [pageSize]="shopParams.pageSize"
       [pageSizeOptions]="pageSizeOptions"
       [showFirstLastButtons]="true"
@@ -59,6 +60,7 @@
     }
   </div>
 </div>
+}
 <!-- #sortMenu is declare in [mat-menu-trigger-for] -->
 <mat-menu #sortMenu="matMenu">
   <mat-selection-list multiple="false" (selectionChange)="onSortChange($event)">
