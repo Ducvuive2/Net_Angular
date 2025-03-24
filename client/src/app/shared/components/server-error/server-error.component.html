@@ -1,0 +1,15 @@
+<div class="container mt-5 p-3 bg-white rounded-lg shadow-md">
+  <h1 class="text-3xl font-semibold">
+    Internal Server Error - refreshing the page will make the error disappear
+  </h1>
+  @if (error) {
+  <h5 class="text-red-500 text-xl">Error: {{ error.message }}</h5>
+  <p class="text-gray-600">
+    This error comes from the server - it's not you fault
+  </p>
+  <h5>Stack Trace</h5>
+  <mat-card>
+    <code class="block whitespace-pre-wrap">{{ error.error.details }}</code>
+  </mat-card>
+  }
+</div>
